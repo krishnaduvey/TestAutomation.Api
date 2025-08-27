@@ -27,4 +27,3 @@ jobs:
 
     - name: Run NUnit tests
       run: dotnet test TestAutomation.RestApi.csproj --configuration Release --logger "trx;LogFileName=test_results.trx"
-
