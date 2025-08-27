@@ -1,0 +1,30 @@
+# ApiAutomationFramework ignore rules 
+# Build artifacts
+bin/
+obj/
+out/
+TestResults/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+*.log
+
+# Debug/Release configs
+*.dll
+*.exe
+*.pdb
+
+# NuGet
+*.nupkg
+packages/
+
+# IDE settings
+.vs/
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
