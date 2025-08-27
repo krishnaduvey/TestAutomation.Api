@@ -20,11 +20,11 @@ jobs:
         dotnet-version: '8.0.x'   # use your project's .NET version
 
     - name: Restore dependencies
-    run: dotnet restore TestAutomation.RestApi.csproj
+      run: dotnet restore TestAutomation.RestApi.csproj
 
     - name: Build
-    run: dotnet build TestAutomation.RestApi.csproj --configuration Release
+      run: dotnet build TestAutomation.RestApi.csproj --configuration Release
 
     - name: Run NUnit tests
-    run: dotnet test TestAutomation.RestApi.csproj --configuration Release --logger "trx;LogFileName=test_results.trx"
+      run: dotnet test TestAutomation.RestApi.csproj --configuration Release --logger "trx;LogFileName=test_results.trx"
 
